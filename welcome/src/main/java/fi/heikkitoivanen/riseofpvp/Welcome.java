@@ -24,7 +24,8 @@ public class Welcome extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        event.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE+"Welcome to the Rise of PVP!! Who will be the winner?");
+        event.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE+"Welcome to the Rise of PVP!!");
+        event.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE+"CAN YOU LEARN PVP AND BECOME ONE OF THE BEST PLAYERS IN THIS SERVER");
     }
 
 
