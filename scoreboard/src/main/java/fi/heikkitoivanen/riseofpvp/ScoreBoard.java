@@ -1,4 +1,4 @@
-package fi.codecrystal.riseofpvp;
+package fi.heikkitoivanen.riseofpvp;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -35,14 +35,17 @@ public class ScoreBoard extends JavaPlugin implements Listener {
     }
 
     public void createBoard(Player player) {
+        String scoreboardId = "HubScoreboard-1";
+        String scoreboardType = "dummy"; // do not need any templated behaviour
+
         ScoreboardManager manager = Bukkit.getScoreboardManager();
         Scoreboard board = manager.getNewScoreboard();
-        Objective obj = board.registerNewObjective("HubScoreboard-1", "dummy", ChatColor.AQUA+"-- scores --");
+        Objective obj = board.registerNewObjective(scoreboardId, scoreboardType, ChatColor.AQUA+"-- Rise of PVP --");
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
 
-        setScoreboardRow(board,"Hubscoreboard-1", 3, ChatColor.BLUE + "=-=-=-=-=");
-        setScoreboardRow(board,"Hubscoreboard-1", 2, ChatColor.BLUE + "Kills: "+ChatColor.DARK_BLUE+player.getStatistic(Statistic.MOB_KILLS));
-        setScoreboardRow(board,"Hubscoreboard-1", 1, ChatColor.BLUE + "Something");
+        setScoreboardRow(board,scoreboardId, 3, ChatColor.BLUE + "=-=- scores =-=-=");
+        setScoreboardRow(board,scoreboardId, 2, ChatColor.BLUE + "Kills: "+ChatColor.DARK_BLUE+player.getStatistic(Statistic.MOB_KILLS));
+        setScoreboardRow(board,scoreboardId, 1, ChatColor.BLUE + "Something");
         player.setScoreboard(board);
     }
 
