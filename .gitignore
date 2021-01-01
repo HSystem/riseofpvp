@@ -1,3 +1,3 @@
-/scoreboard/target/
+**/target/
 /.idea/
-/scoreboard/scoreboard.iml
+**/**.iml

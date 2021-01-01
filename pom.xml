@@ -34,6 +34,7 @@
     <modules>
         <!-- <module>compiler-plugin-java-9</module> --> <!-- We haven't upgraded to java 9. -->
         <module>scoreboard</module>
+        <module>welcome</module>
         <!-- <module>arena</module> -->
         <!-- <module>npcs</module> -->
     </modules>
