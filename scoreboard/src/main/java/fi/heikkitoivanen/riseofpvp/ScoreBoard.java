@@ -46,9 +46,11 @@ public class ScoreBoard extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onKill(EntityDeathEvent e) {
-        Player player = e.getEntity().getKiller();
-        player.sendMessage(ChatColor.RED+" You killed "+e.getEntity().getType());
-        refreshScoreboardEntries(player, player.getScoreboard());
+        if (e.getEntity().getKiller()!=null) {
+            Player player = e.getEntity().getKiller();
+            player.sendMessage(ChatColor.RED + " You killed " + e.getEntity().getType());
+            refreshScoreboardEntries(player, player.getScoreboard());
+        }
     }
 
     public void createBoard(Player player) {
