@@ -23,7 +23,4 @@ public class CrosshairCoordinatesCommand implements CommandExecutor {
         // If the player (or console) uses our command correct, we can return true
         return true;
     }
-
-    // battleshop npc 1, x=265,y=94,z=-46
-    // battleshop npc 2, x=267,y=94,z=-46
 }
