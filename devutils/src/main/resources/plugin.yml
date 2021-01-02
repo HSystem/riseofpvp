@@ -1,0 +1,8 @@
+main: fi.heikkitoivanen.riseofpvp.DevUtils
+name: RiseOfPVP-DevUtils
+version: 0.1.1
+author: CodeCrystal
+commands:
+  crossc:
+    description: Displays coordinates at target
+    usage: /<command>
