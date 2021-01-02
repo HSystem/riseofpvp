@@ -36,6 +36,7 @@
         <module>scoreboard</module>
         <module>welcome</module>
         <module>devutils</module>
+        <module>battleshop</module>
         <!-- <module>arena</module> -->
         <!-- <module>npcs</module> -->
     </modules>
